@@ -31,12 +31,11 @@ import AppointmentList from './pages/AppointmentList';
 // Client pages
 import HomePage from './pages/client/HomePage';
 import AboutPage from './pages/client/AboutPage';
-import ExpertsPage from './pages/client/ExpertsPage';
-import ExpertDetailPage from './pages/client/ExpertDetailPage';
-import SpecialitiesPage from './pages/client/SpecialitiesPage';
-import SpecialityDetailPage from './pages/client/SpecialityDetailPage';
-import ContactPage from './pages/client/ContactPage';
+import ServicesPage from './pages/client/ServicesPage';
+import DoctorsPage from './pages/client/DoctorsPage';
+import HealthInfoPage from './pages/client/HealthInfoPage';
 import BookAppointmentPage from './pages/client/BookAppointmentPage';
+import ContactPage from './pages/client/ContactPage';
 
 function App() {
   return (
@@ -55,13 +54,12 @@ function App() {
         <Route element={<ClientLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/doctor" element={<AboutPage />} />
-          <Route path="/experts" element={<AboutPage />} />
-          <Route path="/experts/:id" element={<AboutPage />} />
-          <Route path="/specialities" element={<SpecialitiesPage />} />
-          <Route path="/specialities/:id" element={<SpecialitiesPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/doctors" element={<DoctorsPage />} />
+          <Route path="/health-info" element={<HealthInfoPage />} />
           <Route path="/book-appointment" element={<BookAppointmentPage />} />
+          <Route path="/appointment" element={<BookAppointmentPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Route>
 
         {/* Login page */}
